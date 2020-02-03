@@ -1,0 +1,26 @@
+{
+    "name": "electro-papaly",
+    "version": "1.0.0",
+    "description": "Electron Wrapper for Papaly",
+    "main": "./out/index.js",
+    "repository": "https://github.com/Deathnerd/electro-papaly",
+    "author": "Wes Gilleland",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "build": "tsc --build",
+        "clean": "rimraf ./out/ ./build/",
+        "zip": "bestzip electro-papaly.zip build/electro-papaly-win32-x64/",
+        "start": "npm run build && electron ./out/",
+        "package": "npm run build && electron-packager ./out/ --platform=win32 --arch=x64 --out=./build/ && npm run zip && npm run clean"
+    },
+    "devDependencies": {
+        "@types/electron": "^1.6.10",
+        "@types/node": "^12.12.21",
+        "bestzip": "^2.1.5",
+        "electron": "^7.1.11",
+        "electron-packager": "^14.2.0",
+        "rimraf": "^3.0.1",
+        "typescript": "^3.7.5"
+    }
+}
