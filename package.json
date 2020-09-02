@@ -17,7 +17,7 @@
     "devDependencies": {
         "@types/electron": "^1.6.10",
         "@types/node": "^12.12.21",
-        "bestzip": "^2.1.5",
+        "bestzip": "^2.1.7",
         "electron": "^7.1.11",
         "electron-packager": "^14.2.0",
         "rimraf": "^3.0.1",
